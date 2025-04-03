@@ -7,7 +7,7 @@ RUN apt-get update && \
         apt-get install -y python3 python3-pip postgresql-client libpq-dev libcurl4-openssl-dev libssl-dev && \
         apt-get clean && \
         rm -rf /var/lib/apt/lists/*
-		
+
 # Install pipenv
 RUN pip3 install poetry
 
